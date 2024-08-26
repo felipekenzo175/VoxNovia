@@ -1,0 +1,119 @@
+html, body {
+    height: 100%; /* Garantir que o body ocupe toda a altura da página */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #010986;
+    color: #190E1B;
+    display: flex;
+    flex-direction: column; /* Usar flexbox para alinhar os elementos */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: #fff;
+    color: #000;
+    padding: 50px;
+    font-family: fantasy;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background: #010986;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    background: #45a049;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: #010986;
+    flex-grow: 1; /* Faz o main crescer e ocupar o espaço disponível */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    background: #F7F7F2;
+    color: #251528;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+footer {
+    background: #F7F7F2;
+    color: #190E1B;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.accordion {
+    background-color: #F7F7F2;
+    color: #251528;
+    cursor: pointer;
+    padding: 10px;
+    width: 170px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #7c18ff;
+    color: #F7F7F2;
+}
+
+.panel {
+    padding: 0 10px;
+    display: none;
+    background-color: #fffafa;
+    overflow: hidden;
+    width: 150px;
+}
+
+.accordion-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+#ferramentas-de-treinamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#logo {
+    display: flex;
+    justify-content: left;
+}
